@@ -41,6 +41,10 @@ body, html {
   body.theme-dark #goat{
       filter: invert(1);
   }
+
+  body.theme-dark #section-1{
+      filter: invert(1);
+  }
   
   .content {
       position: relative;
@@ -96,7 +100,7 @@ body, html {
 
 .menu-links {
       position: relative;
-      margin-top: 155px;
+      margin-top: 5vw;
       color:  var(--theme-color);
       text-decoration: none;
 }
@@ -177,7 +181,7 @@ html {
       height: 3px;
       width: 3px;
       position: absolute;
-      top: 20px;
+      justify-content: center;
       background-color: var(--theme-color);
       transform: rotate(225deg);
 }
@@ -187,8 +191,7 @@ html {
       height: 3px;
       width: 3px;
       position: absolute;
-      top: -6px;
-      left: -27px;
+      justify-content: center;
       background-color: var(--theme-color);
       transform: rotate(225deg);
 }
@@ -198,8 +201,7 @@ html {
       height: 3px;
       width: 3px;
       position: absolute;
-      top: -6px;
-      right: -8px;
+      justify-content: center;
       background-color: var(--theme-color);
       transform: rotate(315deg);
 }
@@ -209,8 +211,7 @@ html {
       height: 3px;
       width: 3px;
       position: absolute;
-      top: 20px;
-      left: -27px;
+      justify-content: center;
       background-color: var(--theme-color);
       transform: rotate(315deg);
 }
@@ -245,11 +246,11 @@ html {
       animation-fill-mode: forwards;
 }
 .line-menu-animation-in {
-   animation: line-menu-animation-in 800ms ease-in;
+   animation: line-menu-animation-in 200ms ease-in;
    animation-fill-mode: forwards;
 }
 .line-menu-animation-out {
-   animation: line-menu-animation-out 800ms ease-in;
+   animation: line-menu-animation-out 200ms ease-in;
    animation-fill-mode: forwards;
 }
 #menu {
@@ -259,7 +260,12 @@ html {
       background-color: transparent;
       border: none;
       padding: 0;
-      margin: 54px 85px;
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+      justify-content: center;
+      align-items: center;
+      
 }
 
 #lightDarkMode {
@@ -273,10 +279,55 @@ html {
 
 .navigation {
       position: relative;
-      right: -1.7%;
+      right: 0.8%;
+      display: flex;
 }
 
 .home {
       position: relative;
       left: 0.8%;
+}
+
+.not-supported {
+      background-image: url(static/Untitled_Artwork.png);
+      background-size: cover;
+      background-position: center;
+}
+
+.arrow1 {
+      border-radius: 150px / 150px;
+      height: 3px;
+      width: 16px;
+      background-color: #000;
+      position: absolute;
+      right: 3.1%;
+      margin-top: 28px;
+      transform: rotate(-23deg);
+}
+.arrow2 {
+      border-radius: 150px / 150px;
+      height: 3px;
+      width: 35px;
+      background-color: #000;
+      position: absolute;
+      right: 1.8%;
+      margin-top: 31px;
+}
+.arrow3 {
+      border-radius: 150px / 150px;
+      height: 3px;
+      width: 16px;
+      background-color: #000;
+      position: absolute;
+      right: 3.1%;
+      margin-top: 34px;
+      transform: rotate(23deg);
+}
+
+.arrow {
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+      top: 20px;
+      right: 20px;
 }
